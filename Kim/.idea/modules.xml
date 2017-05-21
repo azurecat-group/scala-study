@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kim.iml" filepath="$PROJECT_DIR$/.idea/modules/kim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kim-build.iml" filepath="$PROJECT_DIR$/.idea/modules/kim-build.iml" />
     </modules>
   </component>
 </project>
