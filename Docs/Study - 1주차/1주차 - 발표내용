@@ -23,9 +23,9 @@
 예제가 약간 다르긴 하나 어떤식으로 다른가를 설명하기 위해 자바 HashMap과 스칼라 기본 Map 구현을 비교함.
 
 스칼라
-Var capital = Map(“US” -> “Washington”, “France” -> “Paris” )
-Capital += ( “Japan” -> “Tokyo”)
-println(capital(“France”))
+Var capital = Map("US" -> "Washington", "France" -> "Paris" )
+Capital += ( "Japan" -> "Tokyo")
+println(capital("France"))
 
 
 자바
