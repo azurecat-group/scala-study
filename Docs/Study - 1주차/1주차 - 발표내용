@@ -25,7 +25,7 @@
 스칼라
 Var capital = Map(“US” -> “Washington”, “France” -> “Paris” )
 Capital += ( “Japan” -> “Tokyo”)
-pprintln(capital(“France”))
+println(capital(“France”))
 
 
 자바
