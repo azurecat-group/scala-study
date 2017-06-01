@@ -1,6 +1,10 @@
 
 
-object factorial {
+package study.one
+
+import scala.math.BigInt.int2bigInt
+
+object FactorialDemo {
   def main(args: Array[String]): Unit = {
     println(factorial(30))
   }
