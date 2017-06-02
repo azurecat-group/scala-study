@@ -1,3 +1,5 @@
+package study.one
+
 object test {
   def main(args: Array[String]): Unit = {
     var test = Map(
