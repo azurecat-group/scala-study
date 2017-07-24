@@ -1,0 +1,255 @@
+scala> val hex = 0x5
+hex: Int = 5
+
+scala> val hex2 = 0x00FF
+hex2: Int = 255
+
+scala> val magic = 0xcafebabe
+magic: Int = -889275714
+
+scala> val dec1 = 31
+dec1: Int = 31
+
+scala> val dec2 = 255
+dec2: Int = 255
+
+scala> val dec3 = 20
+dec3: Int = 20
+
+scala> val prog = 0XCAFEBABEL
+prog: Long = 3405691582
+
+scala> val tower = 35L
+tower: Long = 35
+
+scala> val of = 31l
+of: Long = 31
+
+scala> val little: Short = 367
+little: Short = 367
+
+scala> val littler: Byte = 38
+littler: Byte = 38
+
+scala> val big = 1.2345
+big: Double = 1.2345
+
+scala> val bigger = 1.2345e1
+bigger: Double = 12.345
+
+scala> val biggerStill = 123E45
+biggerStill: Double = 1.23E47
+
+scala> val little = 1.2345F
+little: Float = 1.2345
+
+scala> val littleBigger = 3e5f
+littleBigger: Float = 300000.0
+
+scala> val anotherDouble = 3e5
+anotherDouble: Double = 300000.0
+
+scala> val yetAnother = 3e5D
+yetAnother: Double = 300000.0
+
+scala> val a = 'A'
+a: Char = A
+
+scala> val d = '\u0041'
+d: Char = A
+
+scala> val f = '\u0044'
+f: Char = D
+
+scala> val B\u0041\u0044 = 1
+BAD: Int = 1
+
+scala> val backslash = '\\'
+backslash: Char = \
+
+scala> val hello = "hello"
+hello: String = hello
+
+scala> val escapes = "\\\"\'"
+escapes: String = \"'
+
+scala> s"The answer is ${6 * 7}."
+res0: String = The answer is 42.
+
+scala> f"${math.Pi}%.5f"
+res1: String = 3.14159
+
+scala> val pi = "Pi"
+pi: String = Pi
+
+scala> f"$pi is approximately ${math.Pi}%.8f."
+res2: String = Pi is approximately 3.14159265.
+
+scala> val sumMore = 1.+(2) 
+sumMore: Int = 3
+
+scala> val s = "Hello, world!" 
+s: String = Hello, world!
+
+scala> s indexOf 'o'     // Scala invokes s.indexOf('o')
+res3: Int = 4
+
+scala> s indexOf ('o', 5) // Scala invokes s.indexOf('o', 5)
+res4: Int = 8
+
+scala> -2.0                  // Scala invokes (2.0).unary_-
+res5: Double = -2.0
+
+scala> (2.0).unary_-
+res6: Double = -2.0
+
+scala> val s = "Hello, world!"
+s: String = Hello, world!
+
+scala> s.toLowerCase 
+res7: String = hello, world!
+
+scala> s toLowerCase
+warning: there were 1 feature warning(s); re-run with -feature for details
+res8: String = hello, world!
+
+scala> 1.2 + 2.3
+res9: Double = 3.5
+
+scala> 3 - 1
+res10: Int = 2
+
+scala> 'b' - 'a'
+res11: Int = 1
+
+scala> 2L * 3L  
+res12: Long = 6
+
+scala> 11 / 4   
+res13: Int = 2
+
+scala> 11 % 4   
+res14: Int = 3
+
+scala> 11.0f / 4.0f
+res15: Float = 2.75
+
+scala> 11.0 % 4.0  
+res16: Double = 3.0
+
+scala> math.IEEEremainder(11.0, 4.0)
+res17: Double = -1.0
+
+scala> val neg = 1 + -3
+neg: Int = -2
+
+scala> val y = +3
+y: Int = 3
+
+scala> -neg
+res18: Int = 2
+
+scala> 1 > 2 
+res19: Boolean = false
+
+scala> 1 < 2 
+res20: Boolean = true
+
+scala> 1.0 <= 1.0  
+res21: Boolean = true
+
+scala> 3.5f >= 3.6f  
+res22: Boolean = false
+
+scala> 'a' >= 'A' 
+res23: Boolean = true
+
+scala> val untrue = !true 
+untrue: Boolean = false
+
+scala> val toBe = true
+toBe: Boolean = true
+
+scala> val question = toBe || !toBe
+question: Boolean = true
+
+scala> val paradox = toBe && !toBe
+paradox: Boolean = false
+
+scala> def salt() = { println("salt"); false }
+salt: ()Boolean
+
+scala> def pepper() = { println("pepper"); true }
+pepper: ()Boolean
+
+scala> pepper() && salt() 
+pepper
+salt
+res24: Boolean = false
+
+scala> salt() && pepper() 
+salt
+res25: Boolean = false
+
+scala> salt() & pepper() 
+salt
+pepper
+res26: Boolean = false
+
+scala> 1 & 2  
+res27: Int = 0
+
+scala> 1 | 2  
+res28: Int = 3
+
+scala> 1 ^ 3  
+res29: Int = 2
+
+scala> ~1     
+res30: Int = -2
+
+scala> -1 >> 31 
+res31: Int = -1
+
+scala> -1 >>> 31
+res32: Int = 1
+
+scala> 1 << 2   
+res33: Int = 4
+
+scala> 1 == 2 
+res34: Boolean = false
+
+scala> 1 != 2 
+res35: Boolean = true
+
+scala> 2 == 2 
+res36: Boolean = true
+
+scala> List(1, 2, 3) == List(1, 2, 3)
+res37: Boolean = true
+
+scala> List(1, 2, 3) == List(4, 5, 6)
+res38: Boolean = false
+
+scala> 1 == 1.0
+res39: Boolean = true
+
+scala> List(1, 2, 3) == "hello"
+res40: Boolean = false
+
+scala> List(1, 2, 3) == null
+res41: Boolean = false
+
+scala> null == List(1, 2, 3)
+res42: Boolean = false
+
+scala> ("he" + "llo") == "hello"
+res43: Boolean = true
+
+scala> 2 << 2 + 2
+res44: Int = 32
+
+scala> 2 + 2 << 2
+res45: Int = 16
+
